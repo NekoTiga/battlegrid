@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Battle</title>
+    <link rel="stylesheet" href="grid-battle.css">
+	<link rel="stylesheet" href="console-display.css">
+	<link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <h1>Grid Battle</h1>
+    <div id="gameGrid"></div>
+    <div class="chat-container">
+      <div class="chat-header">Chat</div>
+      <div class="chat-messages" id="chat-output"></div>
+      <div class="chat-input">
+        <input type="text" placeholder="Name" id="chat-name-input">
+        <input type="text" placeholder="Message" id="chat-message-input">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+    <button id="endTurnButton">End Turn</button>
+    <script src="units.js"></script>
+	<script type="module" src="grid-battle.js"></script>
+    <script src="console-display.js"></script>
+    <script src="chat.js"></script>
+    <script src="spawn-unit.js"></script>
+	<div id="spawnMenu">
+		<h2>Spawn Menu</h2>
+		<button onclick="spawnUnit('melee')">Spawn Melee</button>
+		<button onclick="spawnUnit('ranged')">Spawn Ranged</button>
+		<button onclick="spawnUnit('artillery')">Spawn Artillery</button>
+	</div>
+</body>
+</html>

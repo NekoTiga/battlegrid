@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+}
+
+.grid {
+  flex: 1;
+}
+
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.chat-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.chat-messages {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.chat-input {
+  display: flex;
+  flex-direction: row;
+}
+
+.chat-input input {
+  margin-right: 10px;
+}
+
+.log-container {
+  height: 200px;
+  overflow-y: scroll;
+  border: 1px solid black;
+  padding: 10px;
+}

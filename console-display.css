@@ -1,0 +1,13 @@
+.log-container {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  overflow: auto;
+}
+
+.log {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid black;
+  background-color: #EEE;
+}
